@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="false"
+    android:layout_alignWithParentIfMissing="false"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageButton
+            android:id="@+id/img_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/login_icon_back" />
+
+        <TextView
+            android:id="@+id/edit_sign_mine_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="发布导游需求信息"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="时间："
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/req_date"
+            style="@style/Register_Edit"
+            android:hint="请输入需求时间" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="景点："
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/req_spName"
+            style="@style/Register_Edit"
+            android:hint="请输入景点名" />
+    </LinearLayout>
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="人数："
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/req_num"
+            style="@style/Register_Edit"
+            android:hint="请输入需求人数" />
+    </LinearLayout>
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="费用/人："
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/req_tip"
+            style="@style/Register_Edit"
+            android:hint="请输入每人费用" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            style="@style/Register_Input"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/req_extraInfo"
+                style="@style/Register_Edit"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:enabled="true"
+                android:scrollbars="vertical"
+                android:minLines="1"
+                android:maxLines="20"
+                android:hint="选择输入附加信息" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_login_selector"
+            android:text="发布"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/back"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

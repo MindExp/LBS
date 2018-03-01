@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/edit_sign_mine_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="一键投诉"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_serviceAppealInfo"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+    </ListView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+        <Button
+            android:id="@+id/btn_service_appeal"
+            style="@style/Smile.Button.theme"
+            android:layout_marginRight="165dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_refresh"
+            android:layout_height="30dp" />
+    </TableLayout>
+</TableLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lite"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/offset_title"
+        android:layout_marginRight="@dimen/offset_title"
+        android:layout_marginStart="@dimen/offset_title"
+        android:layout_marginTop="@dimen/offset_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:layout_toStartOf="@+id/btn_search"
+            android:background="@drawable/search_input_half"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/edt_spName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/search_input"
+                android:background="@color/transparent"
+                android:hint="请输入景点名"
+                android:textColorHint="@color/darkgrey"
+                android:singleLine="true"
+                android:textColor="@color/gary"
+                android:textSize="14sp"
+                android:selectAllOnFocus="false"
+                android:focusableInTouchMode="true"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_spSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/offlinearrow_tab2_pressed"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_guideGroupInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/img_addMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/circle_addMenu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@null"
+            android:src="@drawable/mainactivity_publish_publish" />
+    </LinearLayout>
+
+</TableLayout>
