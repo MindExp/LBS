@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>control</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.ControlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>control</servlet-name>
+		<url-pattern>/ControlServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>searchGuiderGroupInfo</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.SearchGuiderGroupInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>searchGuiderGroupInfo</servlet-name>
+		<url-pattern>/SearchGuiderGroupInfo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>registerServlet</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registerServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>diaryServlet</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.DiaryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>diaryServlet</servlet-name>
+		<url-pattern>/DiaryServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>guideRequirementInfo</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.GuideRequirementInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>guideRequirementInfo</servlet-name>
+		<url-pattern>/GuideRequirementInfo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>appointInfo</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.AppointInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appointInfo</servlet-name>
+		<url-pattern>/AppointInfoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>spAppeal</servlet-name>
+		<servlet-class>com.administrator.hezhihai.servlet.ServiceAppealServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>spAppeal</servlet-name>
+		<url-pattern>/ServiceAppealServlet</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

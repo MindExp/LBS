@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="Login_Register">
+  <packagedElement xmi:type="uml:Package" xmi:id="_-ZJQAUcvEeeGjueS_al7ag" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_-ZJQAkcvEeeGjueS_al7ag" name="administrator">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-ZJQA0cvEeeGjueS_al7ag" name="hezhihai">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-ZJQBEcvEeeGjueS_al7ag" name="model">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-ZJQBUcvEeeGjueS_al7ag" name="IGuideDAO">
+            <ownedOperation xmi:id="_-b0w1UcvEeeGjueS_al7ag" name="loginGuide" visibility="public">
+              <ownedParameter xmi:id="_-b0w1kcvEeeGjueS_al7ag" name="guide" type="_-bFJsUcvEeeGjueS_al7ag"/>
+              <ownedParameter xmi:id="_-b0w10cvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hkEcvEeeGjueS_al7ag" name="registerGuide" visibility="public">
+              <ownedParameter xmi:id="_-b-hkUcvEeeGjueS_al7ag" name="guide" type="_-bFJsUcvEeeGjueS_al7ag"/>
+              <ownedParameter xmi:id="_-b-hkkcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-ZJQBkcvEeeGjueS_al7ag" name="ITouristDAO">
+            <ownedOperation xmi:id="_-b-hk0cvEeeGjueS_al7ag" name="loginTourist" visibility="public">
+              <ownedParameter xmi:id="_-b-hlEcvEeeGjueS_al7ag" name="tourist" type="_-bFJtEcvEeeGjueS_al7ag"/>
+              <ownedParameter xmi:id="_-b-hlUcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hl0cvEeeGjueS_al7ag" name="searchGuiderGroupInfo" visibility="public">
+              <ownedParameter xmi:id="_-b-hmEcvEeeGjueS_al7ag" name="keyWords">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_-b-hmUcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hmkcvEeeGjueS_al7ag" name="registerTourist" visibility="public">
+              <ownedParameter xmi:id="_-b-hm0cvEeeGjueS_al7ag" name="tourist" type="_-bFJtEcvEeeGjueS_al7ag"/>
+              <ownedParameter xmi:id="_-b-hnEcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hnUcvEeeGjueS_al7ag" name="addDiary" visibility="public">
+              <ownedParameter xmi:id="_-b-hnkcvEeeGjueS_al7ag" name="diary" type="_-bFJskcvEeeGjueS_al7ag"/>
+              <ownedParameter xmi:id="_-b-hn0cvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hoEcvEeeGjueS_al7ag" name="addGuideReqInfo" visibility="public">
+              <ownedParameter xmi:id="_-b-hoUcvEeeGjueS_al7ag" name="guideReqInfo" type="_-bFJs0cvEeeGjueS_al7ag"/>
+              <ownedParameter xmi:id="_-b-hokcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hpEcvEeeGjueS_al7ag" name="addAppointInfo" visibility="public">
+              <ownedParameter xmi:id="_-b-hpUcvEeeGjueS_al7ag" name="info_id">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_-b-hpkcvEeeGjueS_al7ag" name="t_id">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_-b-hp0cvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hqEcvEeeGjueS_al7ag" name="viewAppointInfo" visibility="public">
+              <ownedParameter xmi:id="_-b-hqUcvEeeGjueS_al7ag" name="t_id">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_-b-hqkcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-b-hq0cvEeeGjueS_al7ag" name="serviceAppeal" visibility="public">
+              <ownedParameter xmi:id="_-b-hrEcvEeeGjueS_al7ag" name="t_id">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_-b-hrUcvEeeGjueS_al7ag" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-ZJQB0cvEeeGjueS_al7ag" name="impl">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-ZJQCEcvEeeGjueS_al7ag" name="TouristDAOImpl" clientDependency="_-b-hrkcvEeeGjueS_al7ag">
+              <ownedAttribute xmi:id="_-b-hr0cvEeeGjueS_al7ag" name="conn" visibility="private"/>
+              <ownedAttribute xmi:id="_-cHrgEcvEeeGjueS_al7ag" name="pstmt" visibility="private"/>
+              <interfaceRealization xmi:id="_-b-hrkcvEeeGjueS_al7ag" name="ITouristDAO" supplier="_-ZJQBkcvEeeGjueS_al7ag" client="_-ZJQCEcvEeeGjueS_al7ag" contract="_-ZJQBkcvEeeGjueS_al7ag"/>
+              <ownedOperation xmi:id="_-cHrgUcvEeeGjueS_al7ag" name="loginTourist" visibility="public">
+                <ownedParameter xmi:id="_-cHrgkcvEeeGjueS_al7ag" name="tourist" type="_-bFJtEcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-cHrg0cvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cRcgEcvEeeGjueS_al7ag" name="searchGuiderGroupInfo" visibility="public">
+                <ownedParameter xmi:id="_-cRcgUcvEeeGjueS_al7ag" name="keyWords">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-cRcgkcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cRcg0cvEeeGjueS_al7ag" name="registerTourist" visibility="public">
+                <ownedParameter xmi:id="_-cRchEcvEeeGjueS_al7ag" name="tourist" type="_-bFJtEcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-cRchUcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cRchkcvEeeGjueS_al7ag" name="addDiary" visibility="public">
+                <ownedParameter xmi:id="_-cRch0cvEeeGjueS_al7ag" name="diary" type="_-bFJskcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-cRciEcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cbNgEcvEeeGjueS_al7ag" name="addGuideReqInfo" visibility="public">
+                <ownedParameter xmi:id="_-cbNgUcvEeeGjueS_al7ag" name="guideReqInfo" type="_-bFJs0cvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-cbNgkcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cbNg0cvEeeGjueS_al7ag" name="addAppointInfo" visibility="public">
+                <ownedParameter xmi:id="_-cbNhEcvEeeGjueS_al7ag" name="info_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-cbNhUcvEeeGjueS_al7ag" name="t_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-cbNhkcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cbNh0cvEeeGjueS_al7ag" name="viewAppointInfo" visibility="public">
+                <ownedParameter xmi:id="_-cbNiEcvEeeGjueS_al7ag" name="t_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-cbNiUcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ckXcEcvEeeGjueS_al7ag" name="serviceAppeal" visibility="public">
+                <ownedParameter xmi:id="_-ckXcUcvEeeGjueS_al7ag" name="t_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-ckXckcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-ZJQCUcvEeeGjueS_al7ag" name="GuideDAOImpl" clientDependency="_-ckXc0cvEeeGjueS_al7ag">
+              <ownedAttribute xmi:id="_-ckXdEcvEeeGjueS_al7ag" name="conn" visibility="private"/>
+              <ownedAttribute xmi:id="_-ckXdUcvEeeGjueS_al7ag" name="pstmt" visibility="private"/>
+              <interfaceRealization xmi:id="_-ckXc0cvEeeGjueS_al7ag" name="IGuideDAO" supplier="_-ZJQBUcvEeeGjueS_al7ag" client="_-ZJQCUcvEeeGjueS_al7ag" contract="_-ZJQBUcvEeeGjueS_al7ag"/>
+              <ownedOperation xmi:id="_-ckXdkcvEeeGjueS_al7ag" name="loginGuide" visibility="public">
+                <ownedParameter xmi:id="_-ckXd0cvEeeGjueS_al7ag" name="guide" type="_-bFJsUcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-ckXeEcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ckXeUcvEeeGjueS_al7ag" name="registerGuide" visibility="public">
+                <ownedParameter xmi:id="_-ckXekcvEeeGjueS_al7ag" name="guide" type="_-bFJsUcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-ckXe0cvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-ZTBAEcvEeeGjueS_al7ag" name="proxy">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-ZTBAUcvEeeGjueS_al7ag" name="GuideDAOProxy" clientDependency="_-cuIcEcvEeeGjueS_al7ag">
+              <ownedAttribute xmi:id="_-cuIcUcvEeeGjueS_al7ag" name="dbc" visibility="private" type="_-bFJxEcvEeeGjueS_al7ag" association="_-egRIEcvEeeGjueS_al7ag"/>
+              <ownedAttribute xmi:id="_-cuIckcvEeeGjueS_al7ag" name="dao" visibility="private" type="_-ZJQBUcvEeeGjueS_al7ag"/>
+              <ownedAttribute xmi:id="_M_AGJEcwEeeGjueS_al7ag" name="dbc" visibility="private" association="_NBYEsEcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_M61X1UcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_M_AGJUcwEeeGjueS_al7ag" name="dao" visibility="private" association="_NBYEskcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Interface" href="#_M61X2UcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_vMWgSEcwEeeGjueS_al7ag" name="dbc" visibility="private" association="_vObj4EcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_vKkXpEcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_vMWgSUcwEeeGjueS_al7ag" name="dao" visibility="private" association="_vObj4kcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Interface" href="#_vIes5UcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_-cuIcEcvEeeGjueS_al7ag" name="IGuideDAO" supplier="_-ZJQBUcvEeeGjueS_al7ag" client="_-ZTBAUcvEeeGjueS_al7ag" contract="_-ZJQBUcvEeeGjueS_al7ag"/>
+              <ownedOperation xmi:id="_-cuIc0cvEeeGjueS_al7ag" name="loginGuide" visibility="public">
+                <ownedParameter xmi:id="_-cuIdEcvEeeGjueS_al7ag" name="guide" type="_-bFJsUcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-cuIdUcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-cuIdkcvEeeGjueS_al7ag" name="registerGuide" visibility="public">
+                <ownedParameter xmi:id="_-cuId0cvEeeGjueS_al7ag" name="guide" type="_-bFJsUcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-cuIeEcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-ZTBAkcvEeeGjueS_al7ag" name="TouristDAOProxy" clientDependency="_-cuIeUcvEeeGjueS_al7ag">
+              <ownedAttribute xmi:id="_-cuIekcvEeeGjueS_al7ag" name="dbc" visibility="private" type="_-bFJxEcvEeeGjueS_al7ag" association="_-egRJEcvEeeGjueS_al7ag"/>
+              <ownedAttribute xmi:id="_-c3SYEcvEeeGjueS_al7ag" name="dao" visibility="private" type="_-ZJQBkcvEeeGjueS_al7ag"/>
+              <ownedAttribute xmi:id="_M_JQEEcwEeeGjueS_al7ag" name="dbc" visibility="private" association="_NBYEtEcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_M61X1UcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_M_JQEUcwEeeGjueS_al7ag" name="dao" visibility="private" association="_NBYEtkcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Interface" href="#_M61X2kcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_vMfqN0cwEeeGjueS_al7ag" name="dbc" visibility="private" association="_vObj5EcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_vKkXpEcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_vMfqOEcwEeeGjueS_al7ag" name="dao" visibility="private" association="_vObj5kcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Interface" href="#_vIes5kcwEeeGjueS_al7ag"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_-cuIeUcvEeeGjueS_al7ag" name="ITouristDAO" supplier="_-ZJQBkcvEeeGjueS_al7ag" client="_-ZTBAkcvEeeGjueS_al7ag" contract="_-ZJQBkcvEeeGjueS_al7ag"/>
+              <ownedOperation xmi:id="_-c3SYUcvEeeGjueS_al7ag" name="loginTourist" visibility="public">
+                <ownedParameter xmi:id="_-c3SYkcvEeeGjueS_al7ag" name="tourist" type="_-bFJtEcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-c3SY0cvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-c3SZEcvEeeGjueS_al7ag" name="searchGuiderGroupInfo" visibility="public">
+                <ownedParameter xmi:id="_-c3SZUcvEeeGjueS_al7ag" name="keyWords">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-c3SZkcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-c3SZ0cvEeeGjueS_al7ag" name="registerTourist" visibility="public">
+                <ownedParameter xmi:id="_-c3SaEcvEeeGjueS_al7ag" name="tourist" type="_-bFJtEcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-c3SaUcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-c3SakcvEeeGjueS_al7ag" name="addDiary" visibility="public">
+                <ownedParameter xmi:id="_-c3Sa0cvEeeGjueS_al7ag" name="diary" type="_-bFJskcvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-c3SbEcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-c3SbUcvEeeGjueS_al7ag" name="addGuideReqInfo" visibility="public">
+                <ownedParameter xmi:id="_-c3SbkcvEeeGjueS_al7ag" name="guideReqInfo" type="_-bFJs0cvEeeGjueS_al7ag"/>
+                <ownedParameter xmi:id="_-c3Sb0cvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-dBDYEcvEeeGjueS_al7ag" name="addAppointInfo" visibility="public">
+                <ownedParameter xmi:id="_-dBDYUcvEeeGjueS_al7ag" name="info_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-dBDYkcvEeeGjueS_al7ag" name="t_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-dBDY0cvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-dBDZEcvEeeGjueS_al7ag" name="viewAppointInfo" visibility="public">
+                <ownedParameter xmi:id="_-dBDZUcvEeeGjueS_al7ag" name="t_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-dBDZkcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-dBDZ0cvEeeGjueS_al7ag" name="serviceAppeal" visibility="public">
+                <ownedParameter xmi:id="_-dBDaEcvEeeGjueS_al7ag" name="t_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-dBDaUcvEeeGjueS_al7ag" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-egRIEcvEeeGjueS_al7ag" memberEnd="_-cuIcUcvEeeGjueS_al7ag _-egRIUcvEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_-egRIUcvEeeGjueS_al7ag" name="GuideDAOProxy" type="_-ZTBAUcvEeeGjueS_al7ag" association="_-egRIEcvEeeGjueS_al7ag"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-egRJEcvEeeGjueS_al7ag" memberEnd="_-cuIekcvEeeGjueS_al7ag _-egRJUcvEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_-egRJUcvEeeGjueS_al7ag" name="TouristDAOProxy" type="_-ZTBAkcvEeeGjueS_al7ag" association="_-egRJEcvEeeGjueS_al7ag"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_NBYEsEcwEeeGjueS_al7ag" memberEnd="_M_AGJEcwEeeGjueS_al7ag _NBYEsUcwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_NBYEsUcwEeeGjueS_al7ag" name="GuideDAOProxy" association="_NBYEsEcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_M6_I0kcwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_NBYEskcwEeeGjueS_al7ag" memberEnd="_M_AGJUcwEeeGjueS_al7ag _NBYEs0cwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_NBYEs0cwEeeGjueS_al7ag" name="GuideDAOProxy" association="_NBYEskcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_M6_I0kcwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_NBYEtEcwEeeGjueS_al7ag" memberEnd="_M_JQEEcwEeeGjueS_al7ag _NBYEtUcwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_NBYEtUcwEeeGjueS_al7ag" name="TouristDAOProxy" association="_NBYEtEcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_M6_I00cwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_NBYEtkcwEeeGjueS_al7ag" memberEnd="_M_JQEUcwEeeGjueS_al7ag _NBYEt0cwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_NBYEt0cwEeeGjueS_al7ag" name="TouristDAOProxy" association="_NBYEtkcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_M6_I00cwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_vObj4EcwEeeGjueS_al7ag" memberEnd="_vMWgSEcwEeeGjueS_al7ag _vObj4UcwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_vObj4UcwEeeGjueS_al7ag" name="GuideDAOProxy" association="_vObj4EcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_vIod5EcwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_vObj4kcwEeeGjueS_al7ag" memberEnd="_vMWgSUcwEeeGjueS_al7ag _vObj40cwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_vObj40cwEeeGjueS_al7ag" name="GuideDAOProxy" association="_vObj4kcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_vIod5EcwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_vObj5EcwEeeGjueS_al7ag" memberEnd="_vMfqN0cwEeeGjueS_al7ag _vObj5UcwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_vObj5UcwEeeGjueS_al7ag" name="TouristDAOProxy" association="_vObj5EcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_vIod5UcwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_vObj5kcwEeeGjueS_al7ag" memberEnd="_vMfqOEcwEeeGjueS_al7ag _vObj50cwEeeGjueS_al7ag">
+              <ownedEnd xmi:id="_vObj50cwEeeGjueS_al7ag" name="TouristDAOProxy" association="_vObj5kcwEeeGjueS_al7ag">
+                <type xmi:type="uml:Class" href="#_vIod5UcwEeeGjueS_al7ag"/>
+              </ownedEnd>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-bFJsEcvEeeGjueS_al7ag" name="bean">
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJsUcvEeeGjueS_al7ag" name="Guider"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJskcvEeeGjueS_al7ag" name="Diary"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJs0cvEeeGjueS_al7ag" name="GuideReqInfo"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJtEcvEeeGjueS_al7ag" name="Tourist"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJtUcvEeeGjueS_al7ag" name="GuiderGroupInfo"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJtkcvEeeGjueS_al7ag" name="ServiceAppealInfo"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJt0cvEeeGjueS_al7ag" name="ViewAppointInfo"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-bFJw0cvEeeGjueS_al7ag" name="dbc">
+          <packagedElement xmi:type="uml:Class" xmi:id="_-bFJxEcvEeeGjueS_al7ag" name="DatabaseConnection"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Jkcq0EcwEeeGjueS_al7ag" name="factory">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Jkcq0UcwEeeGjueS_al7ag" name="DAOFactory">
+            <ownedOperation xmi:id="_JnILaEcwEeeGjueS_al7ag" name="getITouristDAOInstance" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_JnILaUcwEeeGjueS_al7ag" name="return" type="_JnILZ0cwEeeGjueS_al7ag" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_JnILa0cwEeeGjueS_al7ag" name="getIGuideDAOInstance" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_JnILbEcwEeeGjueS_al7ag" name="return" type="_JnILakcwEeeGjueS_al7ag" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-bFJuUcvEeeGjueS_al7ag" name="alibaba">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-bFJukcvEeeGjueS_al7ag" name="fastjson"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-bFJvUcvEeeGjueS_al7ag" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_-bFJvkcvEeeGjueS_al7ag" name="sql"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_JnILYkcwEeeGjueS_al7ag" name="Connection"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_JnILZ0cwEeeGjueS_al7ag" name="ITouristDAO"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_JnILakcwEeeGjueS_al7ag" name="IGuideDAO"/>
+</uml:Model>

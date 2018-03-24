@@ -1,0 +1,36 @@
+package com.administrator.hezhihai.servlet ;
+import java.io.* ;
+import java.util.* ;
+import javax.servlet.* ;
+import javax.servlet.http.* ;
+import com.administrator.hezhihai.bean.*;
+import com.administrator.hezhihai.factory.*;
+import com.alibaba.fastjson.JSON;
+
+public class LoginServlet extends HttpServlet {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public void doGet(HttpServletRequest req,HttpServletResponse resp) throws ServletException,IOException{
+		Tourist tourist = new Tourist();
+		
+		/*tourist.setT_email(req.getParameter("t_email"));
+		tourist.setT_password(req.getParameter("t_password"));*/
+		tourist.setT_email("hezhihaic@163.com");
+		tourist.setT_password("hzh");
+		
+		try {
+			boolean res = DAOFactory.getITouristDAOInstance().loginTourist(tourist);
+			
+			System.out.println(res + tourist.getT_name());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void doPost(HttpServletRequest req,HttpServletResponse resp) throws ServletException,IOException{
+		this.doGet(req,resp) ;
+	}
+}
